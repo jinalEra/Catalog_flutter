@@ -19,14 +19,14 @@ class MyDrawer extends StatelessWidget {
                 margin: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
                   accountName: Text("Jinal Panchal"),
-                  accountEmail: Text("jinalpanchal4277@gmail.com"),
+                  accountEmail: Text("@gmail.com"),
                   currentAccountPicture: CircleAvatar(
                     backgroundImage: NetworkImage(imageUrl),
                   ),
                 ),
               ),
 
-              
+
               ListTile(
                 leading: Icon(
                   CupertinoIcons.home,
