@@ -1,7 +1,6 @@
 import 'package:catalog/Screens/home/homepage.dart';
 import 'package:catalog/widgets/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:catalog/routes.dart';
 
 void main() {
