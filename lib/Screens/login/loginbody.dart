@@ -59,12 +59,14 @@ class _LoginBodyState extends State<LoginBody> {
             child: Column(
               children: [
                 InputTextField(
+                  // validation
                   validator: (value) {
                     if (value.isEmpty) {
                       return "Please Enter Username";
                     }
                     return null;
                   },
+                  // end validation
                   hint: "Username",
                   change: (value) {
                     name = value;
