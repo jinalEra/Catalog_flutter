@@ -19,13 +19,12 @@ class MyDrawer extends StatelessWidget {
                 margin: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
                   accountName: Text("Jinal Panchal"),
-                  accountEmail: Text("@gmail.com"),
+                  accountEmail: Text("jinal@gmail.com"),
                   currentAccountPicture: CircleAvatar(
                     backgroundImage: NetworkImage(imageUrl),
                   ),
                 ),
               ),
-
 
               ListTile(
                 leading: Icon(
