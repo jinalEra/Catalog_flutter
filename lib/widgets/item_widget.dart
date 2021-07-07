@@ -10,6 +10,7 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      margin: EdgeInsets.symmetric(vertical: 10),
       child: ListTile(
         onTap: () {
           print("${item.name}");
@@ -21,7 +22,7 @@ class ItemWidget extends StatelessWidget {
           "\$${item.price}",
           textScaleFactor: 1,
           style:
-              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              TextStyle(color: Colors.purple, fontWeight: FontWeight.bold),
         ),
       ),
     );

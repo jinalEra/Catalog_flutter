@@ -1,0 +1,25 @@
+{
+    "jsonData": [
+        {
+            "id": 1,
+            "name": "abc",
+            "description": "Description of products",
+            "year": "2021",
+            "population": 123456
+        },
+        {
+            "id": 2,
+            "name": "def",
+            "description": "Description of products",
+            "year": "2022",
+            "population": 789123
+        },
+        {
+            "id": 3,
+            "name": "ghi",
+            "description": "Description of products",
+            "year": "2023",
+            "population": 456321
+        }
+    ]
+}
