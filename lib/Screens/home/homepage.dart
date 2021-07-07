@@ -34,3 +34,17 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+// context.runtimeType.toString()
+// Container(
+//         child: Center(
+//           child: Container(
+//             child: Text("Welcome on $name app for $days days",
+//             style: TextStyle(
+//             fontSize: 15,
+//             fontWeight: FontWeight.w500,
+//             color: Colors.black,
+//           ),),
+//           ),
+//         ),
+//       ),

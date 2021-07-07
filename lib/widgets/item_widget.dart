@@ -10,21 +10,19 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 1,
       child: ListTile(
         onTap: () {
           print("${item.name}");
         },
-        leading: Image.asset(item.image ),
-        title: Text(item.name + "dcd"),
-        subtitle: Text(item.description,
-        textScaleFactor: 1),
-        trailing: Text("\$${item.price}",
-        textScaleFactor: 1.1,
-        style: TextStyle(
-          color: Colors.deepPurple,
-          fontWeight: FontWeight.bold
-        ),),
+        leading: Image.asset(item.image),
+        title: Text(item.name, textScaleFactor: 1),
+        subtitle: Text(item.description, textScaleFactor: 1),
+        trailing: Text(
+          "\$${item.price}",
+          textScaleFactor: 1,
+          style:
+              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

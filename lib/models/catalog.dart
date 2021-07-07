@@ -22,14 +22,14 @@ class CatalogModel {
     color: "#eaae0c",
     image: "assets/images/login.png"
   ),
-  
-  Item(
-    id: 2,
-    name: "iPhone 11",
-    description: descriptions,
-    price: 888,
-    color: "#eaae0c",
-    image: "assets/images/welcome_screen.png"
-  )
+
+  // Item(
+  //   id: 2,
+  //   name: "iPhone 11",
+  //   description: descriptions,
+  //   price: 888,
+  //   color: "#eaae0c",
+  //   image: "assets/images/secure_login.png"
+  // )
 ];
 }
