@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
-
   static String routeName = "/home";
 
   @override
@@ -15,7 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   //json work
 
   @override
@@ -25,17 +23,20 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    final json = await rootBundle.loadString("assets/files/product.json");
+    await Future.delayed(Duration(seconds: 2));
+    final json = await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(json);
-    var data = decodedData["jsonData"];
-    print(data);
+    var data = decodedData["data"];
+    CatalogModel.demoItems = List.from(data)
+        .map<Item>((demoItems) => Item.fromMap(demoItems))
+        .toList();
+    setState(() {});
   }
 
   //json end
 
   @override
   Widget build(BuildContext context) {
-    
     // final dummy  = List.generate(10, (index) => CatalogModel.demoItems[0]);
 
     return Scaffold(
@@ -45,12 +46,16 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: CatalogModel.demoItems.length,
-          itemBuilder: (context, index) {
-            return ItemWidget(item: CatalogModel.demoItems[index],);
-          }
-          ),
+        child: (CatalogModel.demoItems != null && CatalogModel.demoItems.isNotEmpty ) ? ListView.builder(
+            itemCount: CatalogModel.demoItems.length,
+            itemBuilder: (context, index) =>
+               ItemWidget(
+                item: CatalogModel.demoItems[index],
+              )
+            )
+            : Center(
+              child: CircularProgressIndicator(),
+            )
       ),
       drawer: MyDrawer(),
     );

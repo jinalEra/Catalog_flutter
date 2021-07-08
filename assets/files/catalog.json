@@ -2,51 +2,45 @@
     "data": [
         {
             "id": 1,
-            "Nation": "United States",
-            "ID Year": 2018,
-            "Year": "2018",
-            "Population": 327167439,
-            "Slug Nation": "united-states"
+            "name": "Hanes Women's Jersey ",
+            "description": "All products are best",
+            "price": 999,
+            "image": "https://m.media-amazon.com/images/I/61I12bGnm+S._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
             "id": 2,
-            "Nation": "United States",
-            "ID Year": 2017,
-            "Year": "2017",
-            "Population": 325719178,
-            "Slug Nation": "united-states"
+            "name": "Full Zip Hoodie",
+            "description": "All products are best",
+            "price": 185,
+            "image": "https://m.media-amazon.com/images/I/81+5CAE2YyL._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
             "id": 3,
-            "Nation": "United States",
-            "ID Year": 2016,
-            "Year": "2016",
-            "Population": 323127515,
-            "Slug Nation": "united-states"
+            "name": "adidas Women's Essentials ",
+            "description": "All products are best",
+            "price": 256,
+            "image": "https://m.media-amazon.com/images/I/51c17snvL8L._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
             "id": 4,
-            "Nation": "United States",
-            "ID Year": 2015,
-            "Year": "2015",
-            "Population": 321418821,
-            "Slug Nation": "united-states"
+            "name": "Brand Love Sweatshirt",
+            "description": "All products are best",
+            "price": 566,
+            "image": "https://m.media-amazon.com/images/I/81s4uHqp3FL._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
             "id": 5,
-            "Nation": "United States",
-            "ID Year": 2014,
-            "Year": "2014",
-            "Population": 318857056,
-            "Slug Nation": "united-states"
+            "name": "Champion Women's Reverse Weave Cropped Cut Off Crew",
+            "description": "All products are best",
+            "price": 784,
+            "image": "https://m.media-amazon.com/images/I/71r2sik24AL._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
             "id": 6,
-            "Nation": "United States",
-            "ID Year": 2013,
-            "Year": "2013",
-            "Population": 316128839,
-            "Slug Nation": "united-states"
+            "name": "Weave Cropped Cut Off Crew",
+            "description": "All products are best",
+            "price": 152,
+            "image": "https://m.media-amazon.com/images/I/61QysXrYE5L._AC_UL480_FMwebp_QL65_.jpg"
         }
     ]
 }

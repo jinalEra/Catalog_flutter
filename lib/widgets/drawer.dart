@@ -1,3 +1,5 @@
+import 'package:catalog/Screens/home/homepage.dart';
+import 'package:catalog/Screens/login/loginpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,16 +28,19 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
 
-              ListTile(
-                leading: Icon(
-                  CupertinoIcons.home,
-                  color: Colors.white,
-                ),
-                title: Text(
-                  "Home",
-                  textScaleFactor: 1.1,
-                  style: TextStyle(
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, HomePage.routeName),
+                child: ListTile(
+                  leading: Icon(
+                    CupertinoIcons.home,
                     color: Colors.white,
+                  ),
+                  title: Text(
+                    "Home",
+                    textScaleFactor: 1.1,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -62,6 +67,22 @@ class MyDrawer extends StatelessWidget {
                   textScaleFactor: 1.1,
                   style: TextStyle(
                     color: Colors.white,
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, LoginPage.routeName),
+                child: ListTile(
+                  leading: Icon(
+                    CupertinoIcons.arrow_uturn_down_circle,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "Login",
+                    textScaleFactor: 1.1,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               )
